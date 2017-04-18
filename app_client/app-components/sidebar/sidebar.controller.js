@@ -17,6 +17,11 @@ var app = angular.module('app');
 
 app.controller('Sidebar.Controller', function($scope, $state, $stateParams, $rootScope, $localStorage, UserService) {
 
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+
+>>>>>>> b07945d9a6039efedda2801547af450150053a43
     $scope.state = null;
     $rootScope.$stateParams = $stateParams;
 
@@ -43,4 +48,17 @@ app.controller('Sidebar.Controller', function($scope, $state, $stateParams, $roo
             }
         }
     });
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+
+=======
+
+        $scope.courseClick = function(index) {
+            $scope.$storage.selectedCourse = index;
+        };
+>>>>>>> origin/kelsey
+=======
+>>>>>>> b07945d9a6039efedda2801547af450150053a43
+>>>>>>> upstream/kelsey
 });

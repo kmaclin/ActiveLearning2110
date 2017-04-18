@@ -136,4 +136,20 @@ var CourseSchema = new Schema({
     lectures: [lecture_snapshot]
 });
 
+<<<<<<< HEAD
+=======
+CourseSchema.methods.lectureOneQuestions = function(question_array)
+{
+    var question1 =
+    {
+        question_num: 1,
+        question_body: 'this is a test question',
+        answer_choices: ['a', 'b', 'c', 'd'],
+        answer: 0
+    };
+    question_array.push(question1);
+    return question_array;
+};
+
+>>>>>>> upstream/kelsey
 module.exports = mongoose.model('Course', CourseSchema);
